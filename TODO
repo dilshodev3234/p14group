@@ -15,3 +15,9 @@
     cat ~/.ssh/id_rsa.pub
 
 6) test qilamiz
+
+rm -fr .git
+
+
+
+Botiirjon
