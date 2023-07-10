@@ -1,0 +1,29 @@
+
+Mavzular :
+    linux cheat sheet commands
+    os , pathlib
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

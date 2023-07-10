@@ -1,0 +1,38 @@
+0) project structure
+1) date base created -> sqlite
+2) UI
+5) class
+3) login
+4) register
+
+
+1) login
+    1) input username
+    2) input password
+    check_login()
+    user_menu:
+        1) add obj
+            category show
+            input category id
+
+            nahsulotni info
+            save()
+        2) buy
+            category show
+            input category id
+            product show ( id ) name )
+            0) back <-
+                product info
+                1) buy
+                    ....
+                2) back <-
+        3) account
+        4) log out
+
+2) register
+    input .....
+    check_phone_number()
+    base_ui()
+
+3) exit
+
