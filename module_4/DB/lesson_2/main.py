@@ -41,7 +41,7 @@ users_create = """
 # rename_column("users" , "fullname","name")
 
 table_list = """
-SELECT users
+SELECT table_name 
   FROM information_schema.tables
  WHERE table_schema='public'"""
 

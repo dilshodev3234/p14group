@@ -1,0 +1,31 @@
+1)
+
+    1) https://leetcode.com/problems/find-the-width-of-columns-of-a-grid/
+
+Mavzular :
+    DML -> insert , select , update , delete
+    DATA Types -> bool , string , numeric , float , date time , json
+
+
+Uyga vazifa:
+    clinic project ni database table yaratamiz (Category , Employee , Customer , Salary)
+    va shu table lar uchun CRUD yozamiz
+    ------------------------------------------------------------------------------------
+    data time  , json o'rganib kelamiz !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
