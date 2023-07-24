@@ -1,0 +1,33 @@
+1)
+    1) https://leetcode.com/problems/reshape-the-matrix/
+
+Mavzular :
+    Filtering data :order by ,  where , Limit , Fetch , In , Between , Like , ILike , Is null
+
+
+Uyga vazifa:
+
+
+    1) Input: Name%
+            shu kiritilgan harflar bilan boshlanuvchi ismlardagi userlarni malumoti chop etilsin !(while da qayta qayta kiritsh imkoni bulsin )
+
+    2) Customer table yarating va 2000 ta ma'lumot qo'shing ! Shu table da telefon raqami kiritmagan customerni toping
+    3) Bank ! history degan table yarating va 2017 yildan 2023 yilgacha bulgan transaction pul o'tkazmalarini chiqaring (GAZ uchun)
+    4) Category , Products degan table yarating ! Python + Postgresql ! Inputdan Category tanlanadi va qulay narx kiritlsa filtrlab product list chiqarilsin  !
+    5) https://www.hackerrank.com/domains/sql?filters%5Bdifficulty%5D%5B%5D=easy&filters%5Bsubdomains%5D%5B%5D=select (EASY)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

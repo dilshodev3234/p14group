@@ -22,7 +22,7 @@ cur = con.cursor()
 
 def rename_column(table_name:str , old_col_name: str, new_col_name:str) -> None:
     query = f"""
-        alter table if exists {table_name} rename column {old_col_name} to {new_col_name};
+        select * from students where fullname like '{name}%'
     """
     try:
         cur.execute(query)

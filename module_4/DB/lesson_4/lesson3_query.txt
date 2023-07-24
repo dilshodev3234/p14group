@@ -1,89 +1,11 @@
---
--- create table if not exists posts(
---     id serial primary key ,
---     title varchar(255) not null
--- );
---
--- create table if not exists comments(
---     id serial primary key ,
---     post_id integer not null,
---     message text
--- );
---
---
--- -- insert , select , update , delete
--- insert into posts (title)
--- values ('Kun yangiligi GM'),
---        ('Otgan kun yangiligi Shovqin kotarganlar')
---        returning id , title;
---
--- select  *
--- from posts
--- where id = 2 or id = 3;
---
--- update posts
--- set title = '' , id = 1000
--- where id = 1000
--- returning *;
---
---
--- delete from posts
--- where id = 1000 or id = 3
--- returning title;
---
---
--- create table if not exists boolean_(
---     col1 bool,
---     col2 bool
--- );
---
--- insert into boolean_(col1, col2)
--- values ( '1', '0'),
---        ('y' , 'no'),
---        ('yes' , 'false'),
---        ('t' , 'f');
---
--- create table character_(
---     char_ char(10),
---     varchar_ varchar(255),
---     text_ text
--- );
---
--- create table _integer_(
---     serial_ serial,
---     smallint_ smallint,
---     int_ int,
---     integer_ integer
--- );
---
--- insert into character_(char_, varchar_, text_)
--- values ('1234' , '1234' , 'dfsdgrewdfrgtrw');
---
---
--- create table _float_(
---     float_ float(2),
---     real_ real,
---     float8_ float8,
---     numeric_ numeric(4,3)
--- );
---
--- drop table _float_;
---
--- insert into _float_ (float_, real_ , float8_ , numeric_)
--- values (123.1 , 1.999 , 1.999, 5.987)
+postgresql
+    constraints -> foreign key , unique , not null , check , primary key
+    data types -> integer , date , varchar(255)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+mat = [
+      [1,0,0],
+      [0,0,1],
+      [1,0,0]
+]
 
