@@ -1,0 +1,128 @@
+create table students(
+    id serial primary key ,
+    fullname varchar(100),
+    phone varchar(20) not null,
+    course_num integer not null,
+    gender varchar(20) check ( gender in ('M' , 'F')) not null ,
+    created_at date default current_date
+);
+
+insert into students( id , phone , course_num , gender )
+values (1001 ,'+3456754' , 3 , 'F' );
+-- order by (sort)
+-- select count(id) from students;
+-- select id, fullname from students order by fullname , id;
+-- select id, fullname , course_num from students order by course_num;
+-- select id , fullname from students order by id desc, fullname ;
+
+
+-- where (place)
+-- select * from students where course_num > 2 order by fullname;
+-- select * from students where course_num = 2 or course_num = 4;
+
+
+-- Limit (cheklov)
+-- select * from students order by id desc limit 5 ;
+-- select * from students limit 10 offset 60;
+
+
+
+-- Fetch (cheklov)
+-- select * from students offset 500 fetch first 500 row only;
+-- select * from students limit 500 offset 500;
+
+
+-- in (ichida bori)
+-- select * from students where id in (1000,2,3);
+-- select * from students where fullname in (select fullname from customer;);
+
+
+-- Between (orasida)
+-- select * from students where course_num between 1 and 3;
+
+
+
+-- like (?)
+-- select * from students where fullname like 'ta%';
+-- select * from students where fullname like '%ta%';
+-- select * from students where fullname like '__ta%';
+-- select * from students where fullname like '%ta';
+-- select * from students where fullname like '%ta_';
+
+-- Ilike (?)
+-- select * from students where fullname Ilike '%TA%';
+
+
+-- is null (?)
+
+-- select count(*) from students where fullname is not null;
+--
+--
+--
+-- select * from students where (created_at > '2019-01-01' and created_at < '2020-01-01') or (created_at > '2022-01-01' and created_at < '2023-01-01');
+-- select * from students where created_at between '2019-01-01' and '2020-01-01' or created_at between '2022-01-01' and '2023-01-01';
+--
+
+
+
+
+-- select st.fullname as firstname, st.phone as phone_number , gender  from students as st;
+--
+-- select s.fullname || ' ' || s.phone || ' ' || s.gender as "fullname and phone" from students as s;
+
+
+
+create table posts(
+    id serial primary key ,
+    title varchar(255)
+);
+
+create table comments(
+    id serial primary key,
+    message text,
+    post_id integer constraint posts_comments_pkey references posts(id)
+);
+
+
+-- inner join ,  left join , right join , full join , cross join
+
+select p.* , c.* from comments c right join posts p on p.id = c.post_id;
+select p.* , c.* from comments c full join posts p on p.id = c.post_id;
+select p.* , c.* from comments c cross join posts p;
+
+
+
+select c.* from comments c left join posts p on p.id = c.post_id where c.post_id is null;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
