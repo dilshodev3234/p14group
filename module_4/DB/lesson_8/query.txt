@@ -1,0 +1,52 @@
+select fullname,
+       case
+           when '1' then 'bir'
+           when '2' then 'ikki'
+when '3' then 'uch'
+when '4' then 'tort' end course_num
+from students;
+
+
+
+
+select payment_id,
+       case
+           when amount > (select avg(amount) from payment) then 'AMOUNT'
+           when amount < (select avg(amount) from payment) then 'amount'
+           end as amount
+
+from payment;
+
+
+--
+-- select first_name , last_name ,
+--        case
+--             when length(first_name) > length(last_name) then first_name
+--             when length(first_name) = length(last_name) then first_name || ' ' || last_name
+--             when length(last_name) > length(first_name) then last_name
+--         end as any_name
+-- from actor;
+
+
+-- cast
+select '100'::integer + '5'::integer;
+select '2023-07-31'::date - '2000-01-01'::date;
+select '10 month'::interval;
+
+
+
+select current_timestamp - '2023 year 6 month'::interval as any_name;
+-- select now() - '2000 year 2 month 19 day 15 hours 15 minute'::interval;
+
+select '9.8'::varchar(2);
+
+
+select '1o'::int;
+
+select p.payment_date::date , p.payment_date::time from payment p;
+select p.payment_date::varchar(4) , p.payment_date::time from payment p;
+
+
+-- coalesce
+
+select coalesce(address2 , 'null') from address;
