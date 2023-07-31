@@ -1,0 +1,76 @@
+1)
+    1)
+        pg_restore dvdrental.tar
+
+
+Mavzular :
+    case
+    cast
+    coalesce
+    backup
+
+
+    ufw  - (ubuntu fire wall )
+    step:
+        sudo apt-get install openssh-server
+        sudo ufw enable -> start
+        sudo ufw allow any_port -> open
+        sudo ufw status
+        sudo ufw delete 1
+
+Home Work:
+    1) 2 ta table (relation) yaratilsin 100 tadan data qo'shilsin ! 2 table datalari tar file ga yozilsin
+    2) 24 , 22 , 90 port lar allow qilinsin
+    3) 10.10.1.128 , 10.10.2.127 IP address lar allow qilinsin
+    4) students.tar file pg_restore qilinsin
+    5) https://www.hackerrank.com/domains/sql?badge_type=sql (max = 20 ta)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
