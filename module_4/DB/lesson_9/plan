@@ -1,65 +1,15 @@
 1)
-    1) https://leetcode.com/problems/squares-of-a-sorted-array/
+    1) https://leetcode.com/problems/find-total-time-spent-by-each-employee/
 
 Mavzular :
-    copy
-    view
-    index
-    crontab
-Home Work:
-
-    1) har soatda backup olinadigan crontabda command yozing
-    2) dvdrental dagi actor va customer tablelari dan backup oluvchi view yaratilsin
-    3) dvdrental dagi actor tableidagi datalarni har 5 minut da jsonga yozadigan qilinsin
+    functions
+    trigger
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Uyga vazifa:
+    0) FUNCTION -> fibanachi sonlarni chiqaradigan function yozing
+    1) FUNCTION -> eng max payment(amount) qilgan customer topadigan query yozilsin (from_date , to_date)
+    2) FUNCTION -> Language, Film ! ANY LANGUAGE tarjima qilingan hamma kinolarni chiqaradigan query yozilsin
+    3) Eng uzun fullname bo'lgan actorlarni top ANY taligini chiqaruvchi query yozilsin
+    4) count_customer(country) -> Country , Customer !      country_name | count(customer)
+    5) FUNCTION -> pow(num , num)

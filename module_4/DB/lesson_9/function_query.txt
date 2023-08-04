@@ -1,0 +1,39 @@
+-- create or replace function actor_top(max_num int)
+--     returns setof actor
+--     language plpgsql
+-- as
+-- $$
+-- begin
+--     return query select * from actor;
+-- end;
+-- $$;
+--
+-- drop function actor_top(max_num int);
+--
+-- select actor_top(20)
+
+
+create or replace function print_num(num int)
+    returns int[]
+    language plpgsql
+as
+$$
+declare
+    massiv int[];
+    c_ int := 0;
+begin
+    while c_ < num loop
+        massiv := array_append(massiv , c_);
+        c_ := c_ + 1;
+    end loop;
+    return massiv;
+end;
+$$;
+
+select print_num(10);
+
+
+
+
+
+
