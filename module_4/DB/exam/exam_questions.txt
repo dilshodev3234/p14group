@@ -1,0 +1,17 @@
+                                        Exam Savolari
+
+    ismimiz bilan database nomi ochamiz va huddi shu nom bilan role ham yaratamiz, va yaratilayotgan barcha talbe va db lar biz yaratgan role ga tegishli bo'lsin
+
+    1. random fake data dan 400ming ta kiritish car talbe uchun (id, name, brand, price, created_at)
+
+    2. postgresql data type lari va ularni limitlari haqida qisqacha  malumot
+
+    3. database tar faylida backup oluvchi cron yozilsin
+       car_detail nomli table ochilsin va car table ga 1ga 1 bog'lanish bo'lsin, ustunlari (id, car_id, detail)
+       car_detail tablega 5ta malumot qo'shilsin
+
+    4. function from_price_to_price(from_price , to_price) yaratilsin ! Car table dagi price uchun filter qiladigan function qilinsin
+    5. users (id , fullname , username , password , join_at) ! shu table uchun trigger yozilsin !(yani biror bir data delete qilinmasdan oldin -> hamma columnlarini delete_users degan table ga saqlansin  )
+
+
+

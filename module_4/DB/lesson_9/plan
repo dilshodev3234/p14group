@@ -6,6 +6,7 @@ Mavzular :
     trigger
 
 
+
 Uyga vazifa:
     0) FUNCTION -> fibanachi sonlarni chiqaradigan function yozing
     1) FUNCTION -> eng max payment(amount) qilgan customer topadigan query yozilsin (from_date , to_date)

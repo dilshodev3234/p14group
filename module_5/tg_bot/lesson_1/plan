@@ -1,0 +1,83 @@
+
+
+Tg bot :
+    1) create bot
+    2) handlers
+    3) users info
+    4) Available methods :  getMe,
+                            answer()
+                            reply()
+                            sendMessage ,
+                            sendPhoto ,
+                            sendVideo ,
+                            copyMessage ,
+                            sendContact ,
+                            sendAudioz ,
+                            sendLocation ,
+                            sendDocument
+
+    5) Reply Buttons
+    6) Inline Buttons
+
+
+Home Work :
+    1) start bosgan userlarni database ga saqlidigan qilamiz !
+    2) /users_inline-> userlarni ismlarini inline buttonda chiqarilsin
+       /users_reply-> userlarni ismlarini reply buttonda chiqarilsin
+
+    3) Fast Food Доставка bot - ni page larini yasab chiqamiz ! https://t.me/FastFood1221_bot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
