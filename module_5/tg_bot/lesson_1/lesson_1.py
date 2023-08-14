@@ -9,6 +9,7 @@ BOT_TOKEN = "6619757261:AAH6MTKIObecDWDdsaYkpzRivFcCzfrs0To"
 bot = Bot(BOT_TOKEN)
 dp = Dispatcher(bot)
 
+
 @dp.message_handler(commands='start')
 async def start_handler(message: types.Message):
     print(f"{message.from_user.first_name} : {message.from_user.id}")
