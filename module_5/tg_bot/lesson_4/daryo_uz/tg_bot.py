@@ -4,41 +4,27 @@ from aiogram.dispatcher.filters import Text, Filter, CommandStart
 from aiogram.dispatcher.webhook import PromoteChatMember
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
+from module_5.tg_bot.lesson_4.daryo_uz.main import news_data
+
 BOT_TOKEN = "6619757261:AAH6MTKIObecDWDdsaYkpzRivFcCzfrs0To"
 
 bot = Bot(BOT_TOKEN)
 dp = Dispatcher(bot)
 logging.basicConfig(level=logging.INFO)
-datas = [
-    {
-    "msg": "salom",
-     "reply_msg": "Hi"}
-]
 
-@dp.message_handler(commands="datas")
+
+@dp.message_handler(commands="news")
 async def any_message(msg: types.Message):
-    await msg.answer(f"{datas}")
-@dp.message_handler()
-async def any_message(msg: types.Message):
-    l = []
+    datas = news_data()
     for i in datas:
-        if msg.text == i.get("msg"):
-            l.append(i.get("reply_msg"))
-    if not l:
-        if msg.reply_to_message:
+        text = f"""
+{i.get('title')}
 
-            data = {
-                "msg": msg.reply_to_message.text,
-                "reply_msg": msg.text
-            }
-            datas.append(data)
-    else:
-        await msg.reply(l[-1])
+{i.get('date')}
 
-
-
-
-
+[Daryo Uz](https://t.me/daryo_3234)
+        """
+        await msg.bot.send_photo(-1001842354993 , f"https://daryo.uz/{i.get('photo_link')}",caption=text,parse_mode="Markdown")
 
 
 if __name__ == '__main__':
