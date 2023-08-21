@@ -1,0 +1,17 @@
+image:
+    remove : docker rmi image_id (docker rm image image_id)
+    pull : docker pull hello-world
+    list : docker images
+
+
+container:
+    remove : docker rm container_id or name
+    create : docker run -it -d hello-world hello_container
+    list :
+            docker ps -> active containers
+            docker ps -a -> all containers
+    stop : docker stop container_id or name
+    start : docker start container_id or name
+    enter : docker exec -it [container_name or id] sh
+
+
