@@ -1,0 +1,37 @@
+ngrok http 3001
+  109  lsof
+  110  netstat
+  111  sudo lsof -i: 3001
+  112  netstat -ano | findstr :<port>
+  113  netstat -ano | findstr :3001
+  114  netstat -ano | findstr :<PORT>
+  115  netstat -ano | findstr : 3001
+  116  netstat -ano | findstr 3001
+  117  sudo lsof -i: 3001
+  118  top | grep "ngrok"
+  119  taskkill /f /im ngrok.exe
+  120  killall ngrok
+  121  ngrok http 3002
+  122  killall ngrok
+  123  ngrok 3001
+  124  sudo ngrok 3001
+  125  ngrok https 3001
+  126  ngrok http 3001
+  127  killall ngrok
+  128  ngrok http 3001
+  129  clear
+  130  ngrok http 3001
+  131  sudo fuser -k 3001/tcp
+  132  sudo kill 9732
+  133  sudo fuser -k 3001
+  134  ngrok http 3001
+  135  killall ngrok
+  136  ngrok http 3001
+  137  sudo systemctl status redis
+  138  ngrok http 3003
+  139  ngrok http 3001
+  140  killall ngrok
+  141  ngrok http 3001
+  142  killall ngrok
+  143  ngrok http 3001
+  144  ngrok http 3002

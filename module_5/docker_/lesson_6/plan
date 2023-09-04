@@ -1,0 +1,17 @@
+1) push image to docker hub
+2) Dockerfile , docker-compose , docker-swarm between different
+3) docker-compose
+4) docker-compose 2 ta service ko'tarish
+
+
+
+
+redis
+
+
+Dockerfile -> 1 ta laptop da 1 ta service
+docker-compose -> 1 ta laptop da n ta service
+docker-swarm -> n ta laptop da n ta service
+
+
+
